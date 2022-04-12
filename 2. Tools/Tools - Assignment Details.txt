@@ -1,0 +1,10 @@
+Tools
+Having set up an individual website in Assignment 1, you should now set up a group website, using the same approach. You should then include links to each individual website on the group website.
+You also need to set up a GitHub repository for your group on which you can use Git. This is to facilitate the production and maintenance of group artifacts, which will include the assignment submission, but may also include other reports or information, code, examples, formatted data, images and videos, links, and similar information.
+You will also need to set up your group on Canvas.
+In your report you should include a brief description of what you have done, and include the following:
+• The link to your group’s website
+• The link to your group’s Git repository (GitHub)
+• Your comments on how well the audit trail on the Git repository reflects your group’s work. You will presumably only be able to do this close to the time of submission.
+GitHub Invite Collaborators: https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository
+MS Teams information, meetings, notes, and links (etc.) should be included in this section too.

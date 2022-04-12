@@ -1,0 +1,9 @@
+Project Ideas
+You all have some project ideas that you reported in Assignment 1. You are to come up with a project idea for the group as a whole, which could be an individual’s idea, but is more likely to be a combination of each of the ideas you had individually (maybe an entirely new IT Project Idea proposal), together with comments and feedback from your Assignment 1 marker, instructor, and anyone else who you would like to consult.
+You may also wish to consider what problems need to be solved, for which there are many sources of information, such as the ones below. There are many more websites like these, of course.
+https://www.weforum.org/agenda/2016/01/what-are-the-10-biggest-global-challenges/
+https://www.cheatsheet.com/money-career/want-to-be-a-billionaire-solve-one-of-these-5-problems.html/?a=viewall
+https://www.quora.com/What-are-common-problems-that-need-solving
+There is no set length for this section, but it is difficult to see how a description of less than 1500 words would be adequate. Do not limit yourself to this if you have more than this to write, though - but it should be in a well written and concise format.
+Expand the Overview, Motivation, Description, Tools + Tech, Skills, Outcome items from Assignment 1. Adapt it using the feedback received and the developments/suggestions from your group members. Put weight behind innovative components and ensure the project is feasible [no sci-fi / pie-in-the-sky] to make steps beyond a simple proposal/plan. Perhaps look towards identifying niche/markets/needs, and the more detailed mechanics of the project.
+Note: There are to be significant tangible artifacts towards the project completion that are delivered by the submission of ASSIGNMENT 3, so keep this in mind when brainstorming your IT Project Idea for Assignment 2 – Feasibility is a key factor.
