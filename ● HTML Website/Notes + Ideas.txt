@@ -1,4 +1,21 @@
-- Icon hyperlink to:
-	- GitHub Repo
-	- MS Teams Group
-	- DL of PDF report (the overall A2 completed work)
+- Group hyperlink to:
+	- GitHub Team Repo ✓
+		- Git Icon Asset ✓
+		- Git link address: https://bit.ly/3M4qyM7 ✓
+	- MS Teams Group ✓
+		- Git Icon Asset ✓
+		- Git link address: https://bit.ly/3uCW1ig
+	- DL of PDF report (the overall A2 completed work) ✓
+		- PDF Icon Asset ✓
+		- PDF link address: 
+
+
+
+
+- Links to Members Profiles for each
+	- Display Pictures ✓
+	- hyperlinks from members profiles
+		- github (links to github profile of each)
+		- student email (links to emailto: for each)
+		- student id (links to RMIT site)
+
