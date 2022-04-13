@@ -1,0 +1,4 @@
+- Icon hyperlink to:
+	- GitHub Repo
+	- MS Teams Group
+	- DL of PDF report (the overall A2 completed work)
