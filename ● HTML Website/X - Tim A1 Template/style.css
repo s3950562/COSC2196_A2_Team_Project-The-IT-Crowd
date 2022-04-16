@@ -35,7 +35,7 @@ p {
 	background: #13315c;
 }
 
-.bolded { 
+.bolded {
 	font-weight:bold;
 }
 
@@ -71,7 +71,7 @@ p {
 
 #headshot img {
 	width: 80%;
-	display: block;	
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	border: 15px solid #0b2545;
@@ -85,7 +85,7 @@ p {
 	text-align: center;
 }
 
-#contactDetails {	
+#contactDetails {
 	font-size: 1.0em;
 }
 
@@ -95,7 +95,7 @@ p {
 	margin-bottom: 20px;
 	margin-top: -16px;
 	color: #eef4ed;
-}	
+}
 
 #dotPoints1 ul {
 	font-size: 1.0em;
@@ -113,7 +113,7 @@ p {
 }
 
 #dotPoints_Ref a[href^=tel] {
-	color: #8da9c4; 
+	color: #8da9c4;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -122,25 +122,25 @@ p {
 	transition: all .3s ease-in;
 }
 
-#dotPoints_Ref a:link { 
+#dotPoints_Ref a:link {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#dotPoints_Ref a:visited { 
+#dotPoints_Ref a:visited {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#dotPoints_Ref a:hover { 
+#dotPoints_Ref a:hover {
 	color: #d7e3fc;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#dotPoints_Ref a:active { 
+#dotPoints_Ref a:active {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
@@ -163,11 +163,11 @@ p {
 	margin-bottom: 8px;
 	color: #8da9c4;
 	display: inline;
-	
+
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #8da9c4; 
+	color: #8da9c4;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -176,32 +176,32 @@ p {
 	transition: all .3s ease-in;
 }
 
-#contactDetails ul li a:link { 
+#contactDetails ul li a:link {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#contactDetails ul li a:visited { 
+#contactDetails ul li a:visited {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#contactDetails ul li a:hover { 
+#contactDetails ul li a:hover {
 	color: #d7e3fc;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-#contactDetails ul li a:active { 
+#contactDetails ul li a:active {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
 .sectionContent a[href^=tel] {
-	color: #8da9c4; 
+	color: #8da9c4;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -210,25 +210,25 @@ p {
 	transition: all .3s ease-in;
 }
 
-.sectionContent a:link { 
+.sectionContent a:link {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-.sectionContent a:visited { 
+.sectionContent a:visited {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-.sectionContent a:hover { 
+.sectionContent a:hover {
 	color: #d7e3fc;
 	background-color: transparent;
   	text-decoration: none;
 }
 
-.sectionContent a:active { 
+.sectionContent a:active {
 	color: #8da9c4;
 	background-color: transparent;
   	text-decoration: none;
@@ -279,7 +279,7 @@ section:last-child {
 
 .sectionTitle2 img2 {
 	margin-top: 10em;
-	width: 100%;	
+	width: 100%;
 }
 
 .sectionContent h2 {
@@ -318,7 +318,7 @@ section:last-child {
 	#headshot {
 		display: none;
 	}
-	
+
 	.keySkills {
 	-moz-column-count:2;
 	-webkit-column-count:2;
@@ -332,27 +332,27 @@ section:last-child {
 		margin: 10px auto;
 		min-width: 280px;
 	}
-	
+
 	#headshot {
 		display: none;
 	}
-	
+
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.sectionTitle, .sectionContent {
 		float: none;
 		width: 100%;
 	}
-	
+
 	.sectionTitle {
 		margin-left: 0px;
 		font-size: 1.25em;
 	}
-	
+
 	.keySkills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
@@ -364,22 +364,22 @@ section:last-child {
 	.mainDetails {
 		padding: 15px 15px;
 	}
-	
+
 	section {
 		padding: 15px 0 0;
 	}
-	
+
 	#mainArea {
 		padding: 0 25px;
 	}
 
-	
+
 	.keySkills {
 	-moz-column-count:1;
 	-webkit-column-count:1;
 	column-count:1;
 	}
-	
+
 	#name h1 {
 		line-height: 0.8em;
 		margin-bottom: 4px;
@@ -459,11 +459,11 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 1.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -473,16 +473,16 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 2.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 2.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 2.5s;
     animation-timing-function: ease-in;
 }
- 
+
 .delayOne {
 	-webkit-animation-delay: 0, .5s;
 	-moz-animation-delay: 0, .5s;
@@ -511,4 +511,9 @@ section:last-child {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
 }
