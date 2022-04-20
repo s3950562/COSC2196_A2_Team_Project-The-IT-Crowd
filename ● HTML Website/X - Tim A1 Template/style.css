@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #30323D; font-family: 'Poppins', helvetica, arial, sans-serif; font-size: px; color: #eef4ed;}
+html, body {background: #303036; font-family: 'Poppins', helvetica, arial, sans-serif; font-size: px; color: #eef4ed;}
 
 .clear {clear: both;}
 
@@ -19,25 +19,27 @@ p {
 	font-size: 1.0em;
 	line-height: 2.3em;
 	margin-bottom: 20px;
-	color: #CDD1C4;
+	color: #FFFAFF;
 }
 
 #cv {
 	width: 100%;
 	max-width: 90%;
-	background: #4D5061;
+	background: #1D1D20;
 	margin: 25px auto;
 }
 
 .mainDetails {
 	padding: 25px 25px;
-	border-bottom: 5px solid #8da9c4;
-	background: #5c80BC;
+	border-bottom: 5px solid #7CD4F4;
+	background: #129CCE;
 }
 
+/* """i dont think we need this?
 #mainDetails img {
 	width: 1%;
 }
+*/
 
 
 .bolded {
@@ -51,14 +53,15 @@ p {
 	line-height: 1.0em;
 	text-align: auto;
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
-	padding-top: 3px;
+	padding-top: 0px;
 }
 
 #name h2 {
-	font-size: 3.0em;
+	font-size: 2.5em;
 	margin-left: 1px;
-	letter-spacing: 15px;
-	padding-top: 5px;
+	letter-spacing: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 	text-align: auto;
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
@@ -69,23 +72,24 @@ p {
 
 #teamphoto {
 	display: block;
-	width: 50%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 1%;
 }
 
 #teamphoto img {
-	width: 80%;
+	width: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: 6px solid #E8c547;
+	border-bottom: 3.5px solid #7CD4F4;
 
 }
 
 #headshot {
 	display: block;
-	width: 35%;
+	width: 77%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -95,7 +99,7 @@ p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 5px solid #E8c547;
+	border: 0px solid #7CD4F4;
 	-webkit-border-radius: 100%;
 	border-radius: auto;
 }
@@ -232,25 +236,25 @@ p {
 }
 
 .sectionContent a:link {
-	color: #8da9c4;
+	color: #DFDFE2;
 	background-color: transparent;
   	text-decoration: none;
 }
 
 .sectionContent a:visited {
-	color: #8da9c4;
+	color: #DFDFE2;
 	background-color: transparent;
   	text-decoration: none;
 }
 
 .sectionContent a:hover {
-	color: #d7e3fc;
+	color: #FFFAFF;
 	background-color: transparent;
   	text-decoration: none;
 }
 
 .sectionContent a:active {
-	color: #8da9c4;
+	color: #FFFAFF;
 	background-color: transparent;
   	text-decoration: none;
 }
@@ -278,20 +282,24 @@ section:last-child {
 .sectionContent {
 	text-align: left;
 	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 3%;
 }
 
 .sectionTitle h1 {
 	font-family:'Poppins', Helvetica, Arial, sans-serif;
 	text-align:auto;
-	font-size: 1.9em;
-	color: #d7e3fc;
+	font-size: 2.2em;
+	color: #FFFAFF;
+	letter-spacing: 8px;
+	margin-bottom: 6%;
 }
 
 .sectionTitle h1:after {
 	content: ' ';
     display: block;
-	margin-top: 2%;
-	border-top: 2px solid #8da9c4;
+	margin-top: 0.2%;
+	border-top: 2px solid #0B6383;
 }
 
 .sectionTitle img {
@@ -306,9 +314,10 @@ section:last-child {
 .sectionContent h2 {
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
 	text-align: center;
-	font-size: 1.7em;
-		letter-spacing: 6px;
-	margin-bottom: 2%;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	margin-bottom: 20%;
+	margin-top: 10%;
 }
 
 .sectionContent h3 {
@@ -335,30 +344,34 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
-/* Style the header */
-.header {
-  	padding: 15px 15px;
-  	background: #30323D;
-  	color: #CDD1C4;
-	border-bottom: 5px solid #8da9c4;
-	
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #303036;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 87.0%;
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #DFDFE2;
+  color: #131315;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 100px;
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 

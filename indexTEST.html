@@ -25,15 +25,35 @@
         </div>
       </div>
 		
-	<div class="header" id="myHeader">
-	  <h2>My Header</h2>
+	<div class="navbar">
+	  	<a href="#home">Home</a>
+		<a href="#news">Team Profiles</a>
+		<a href="#contact">Ideal Jobs</a>
+		<a href="#home">Tools</a>
+		<a href="#contact">Industry Data</a>
+		<a href="#home">IT Work</a>
+		<a href="#news">IT Technologies</a>
+		<a href="#contact">Project Idea</a>
+		<a href="#home">Reflection</a>
 	</div>
-		
+
 	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+            	<div class="sectionTitle">
+              		<h1><span class="bolded">"""Intro"""</span></h1>
+            	</div>
+
+            <div class="sectionContent">
+				<p>Add short blurb here</p>
+            </div>
+          </article>
+        </section>
+		
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Meet our team:</span></h1>
+              <h1><span class="bolded">The Team</span></h1>
             </div>
 
             <div class="sectionContent">
@@ -41,46 +61,33 @@
                 <tr>
                   <th>
                     <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Vanessa_Profile pic.jpg" alt="Vanessa Profile Pic"></a>
+                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Vanessa_Profile pic.png" alt="Vanessa Profile Pic"></a>
                     </div>
                   </th>
                   <th>
                     <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Tim_headshot.jpg" alt="Tim Profile Pic"></a>
+                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Josh_Profile_pic.png" alt="Josh Profile Pic"></a>
                     </div>
+                  </th>
+				  <th>
+                    <div id="headshot" class="quickFade delayFour">
+               			<a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Tim_headshot.png" alt="Tim Profile Pic"></a>
+					  </div>
                   </th>
                 </tr>
 
                 <tr>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html">Vanessa Smair</a></center></h2>
-                  </td>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Tim_profile.html">Timothy Nancarrow</a></center></h2>
-                  </td>
+                  	<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html">Vanessa Smair</a></center></h2>
+					</td>
+					<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Josh_profile.html">Joshua Wagner</a></center></h2>
+					</td>
+					<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Tim_profile.html">Timothy Nancarrow</a></center></h2>
+					</td>
                 </tr>
 
-                <tr>
-                  <td>
-                    <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Josh_Profile_pic.jpg" alt="Josh Profile Pic"></a>
-                    </div>
-                  </td>
-                  <td>
-                    <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Mitchell_Profile_pic.jpg" alt="Mitchell_Profile_pic"></a>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Josh_profile.html">Joshua Wagner</a></center></h2>
-                  </td>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Mitchell_profile.html">Mitchell Grainger</a></center></h2>
-                  </td>
-                </tr>
               </table>
             </div>
           </article>
@@ -226,26 +233,6 @@
 
       </div>
     </div>
-
-	<script>  
-	  	// When the user scrolls the page, execute myFunction
-		window.onscroll = function() {myFunction()};
-
-		// Get the header
-		var header = document.getElementById("myHeader");
-
-		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
-
-		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-  			if (window.pageYOffset > sticky) {
-    			header.classList.add("sticky");
-			} else {
-    		header.classList.remove("sticky");
-			}
-		}
-	</script>
 
   </body>
 </html>
