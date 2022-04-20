@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #0b2545; font-family: 'Poppins', helvetica, arial, sans-serif; font-size: px; color: #eef4ed;}
+html, body {background: #30323D; font-family: 'Poppins', helvetica, arial, sans-serif; font-size: px; color: #eef4ed;}
 
 .clear {clear: both;}
 
@@ -19,40 +19,45 @@ p {
 	font-size: 1.0em;
 	line-height: 2.3em;
 	margin-bottom: 20px;
-	color: #eef4ed;
+	color: #CDD1C4;
 }
 
 #cv {
 	width: 100%;
-	max-width: 800px;
-	background: #134074;
-	margin: 30px auto;
+	max-width: 90%;
+	background: #4D5061;
+	margin: 25px auto;
 }
 
 .mainDetails {
 	padding: 25px 25px;
 	border-bottom: 5px solid #8da9c4;
-	background: #13315c;
+	background: #5c80BC;
 }
+
+#mainDetails img {
+	width: 1%;
+}
+
 
 .bolded {
 	font-weight:bold;
 }
 
 #name h1 {
-	font-size: 3.77em;
-	font-weight: 700;
-	letter-spacing: 10px;
-	line-height: 1.2em;
+	font-size: 4.0em;
+	font-weight: 650;
+	letter-spacing: 20px;
+	line-height: 1.0em;
 	text-align: auto;
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
-	margin-top: -45px;
+	padding-top: 3px;
 }
 
 #name h2 {
-	font-size: 2.5em;
+	font-size: 3.0em;
 	margin-left: 1px;
-	letter-spacing: 10px;
+	letter-spacing: 15px;
 	padding-top: 5px;
 	text-align: auto;
 	font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -60,6 +65,22 @@ p {
 
 #mainArea {
 	padding: 0 60px;
+}
+
+#teamphoto {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#teamphoto img {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 6px solid #E8c547;
+
 }
 
 #headshot {
@@ -74,7 +95,7 @@ p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 15px solid #0b2545;
+	border: 5px solid #E8c547;
 	-webkit-border-radius: 100%;
 	border-radius: auto;
 }
@@ -313,6 +334,33 @@ section:last-child {
 	font-size: 0.8em;
 	margin-bottom: 3px;
 }
+
+/* Style the header */
+.header {
+  	padding: 15px 15px;
+  	background: #30323D;
+  	color: #CDD1C4;
+	border-bottom: 5px solid #8da9c4;
+	
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 87.0%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 100px;
+}
+
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
