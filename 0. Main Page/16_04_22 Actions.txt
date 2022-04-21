@@ -1,0 +1,45 @@
+16/04/2022
+Attended: Timothy, Joshua
+N/A: Vanessa, Mitchell
+
+Meeting Actions
+
+- Technology research
+	- Crypto + Blockchain
+		Tim to start to make notes on this topic, pending Robitics updates.
+		to check with Vanessa.
+	- Cloud
+		Will be completed by 17th or 18th
+		
+- Industry data
+	Joshua has completed the html page to be include, once the css is ready for deployment.
+	Each member needs a paragraph of reflection for this section, 
+	if its changed our views or not. (all, but we can add this later).
+	
+- Profiles
+	- We need to slim our profiles to one paragraph or so.
+	"Personal information
+	One paragraph per person, including name, student number, background, hobbies, IT interest and IT experience. This should also include your team’s chosen name."
+	
+- HTML
+	- General discussion just were we are at, and what is not pushed to git.
+- hub page
+	this is the landing page, Joshua + Tim will dive into this tomorrow. 
+	Joshua is downloading dreamweaver to collab with Tim tomorrow together.
+
+- Open Discussion
+	- Team Name rethink - """rethink due to assignment saying it may come to the attention of potential employers."""
+	- Skeleton load up recordings and minutes to dedicate to the html. Josh will get to this, or it will be actioned tomorrow.
+	- Rethink team name
+		The IT Crowd?
+
+w3 tutorials
+
+Finish Cloud Tech
+My prole slim down to a paragraph or so
+Brief summary/reflection of the team profile comparison
+Start dot points on Crypto
+
+Hub 
+
+Seketon project idea part
