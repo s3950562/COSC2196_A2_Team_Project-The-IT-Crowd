@@ -315,7 +315,7 @@ section:last-child {
 	text-align: center;
 	font-size: 1.3em;
 	letter-spacing: 3px;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 	margin-top: 8%;
 }
 
@@ -324,8 +324,8 @@ section:last-child {
 	text-align:center;
 	font-size: 1.3em;
 	letter-spacing: 6px;
-	margin-top: 0%;
-	margin-bottom: 1%;
+	margin-top: 2%;
+	margin-bottom: 4%;
 }
 
 .sectionContent img {
