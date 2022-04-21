@@ -329,13 +329,13 @@ section:last-child {
 }
 
 .sectionContent img {
+	max-height: 110px;
+	max-width: 110px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: 10px solid #0b2545;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	width: 80%
+	border: 10px solid #1D1D20;	
+	width: 100%
 }
 
 .subDetails {
@@ -349,7 +349,7 @@ section:last-child {
   background-color: #303036;
   position: fixed; /* Set the navbar to fixed position */
   top: 0%; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  width: 90%; /* Full width */
 }
 
 /* Links inside the navbar */
@@ -375,10 +375,10 @@ section:last-child {
 
 .footer {
   position: relative;
-  left: 0;
+  left: 5%;
   bottom: 0;
-  width: 100%;
-  background-color: #303036;
+  width: 90%;
+  background-color: #129CCE;
   color: white;
   text-align: center;
 }
