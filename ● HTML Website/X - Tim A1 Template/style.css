@@ -23,8 +23,8 @@ p {
 }
 
 #cv {
-	width: 100%;
-	max-width: 90%;
+	width: 90%;
+	max-width: 100%;
 	background: #1D1D20;
 	margin: 25px auto;
 }
@@ -84,7 +84,6 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom: 3.5px solid #7CD4F4;
-
 }
 
 #headshot {
@@ -100,7 +99,7 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	border: 0px solid #7CD4F4;
-	-webkit-border-radius: 100%;
+	-webkit-border-radius: 30%;
 	border-radius: auto;
 }
 
@@ -349,7 +348,7 @@ section:last-child {
   overflow: hidden;
   background-color: #303036;
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0%; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
 
@@ -359,7 +358,7 @@ section:last-child {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 25px;
   text-decoration: none;
 }
 
@@ -374,6 +373,15 @@ section:last-child {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
