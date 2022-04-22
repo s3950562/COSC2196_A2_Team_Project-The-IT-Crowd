@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>COSC2196-A2-The-Rag-Tags</title>
+    <title>COSC2196-A2-The-IT-Crowd</title>
 
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Website for The-Rag-Tags">
+    <meta name="description" content="Website for The-IT-Crowd">
     <meta charset="utf-8">
+	<!-- Styling -->
+    <link type="text/css" rel="stylesheet" href="● HTML Website/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" type="text/css">
+	<!-- Page Scroller -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Donut Chart -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+	['Task', 'GitHub Commits'],
+		['Vanessa', 15],
+		['Joshua', 30],
+		['Timothy', 48],
+	]);
+// Donut Chart Options
+	var options = {
+		title: "Team Commits GitHub",
+		titleTextStyle: { color: "FFFFFF",
+  			fontName: "Poppins",
+  			fontSize: 20,},
+		pieSliceTextStyle: {color: "FFFFFF", fontName: "Poppins", fontSize: 20
+				},
+		pieHole: 0.4,
 
-    <link type="text/css" rel="stylesheet" href="● HTML Website/X - Tim A1 Template/style.css">
-    <link href="http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300" rel="stylesheet" type="text/css">
+		backgroundColor: { fill:"transparent" },	
 
+		legend: {
+			position: "bottom", 
+        	alignment: "center",
+        	orientation: "vertical",
+  			textStyle: {
+				color: "FFFFFF",
+				fontSize: 18,
+				fontStyle: "Poppins",
+				}
+		},
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+	chart.draw(data, options);
+	}
+	</script>
   </head>
+  <body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div id="Home"></div>
+	<!-- Button to return to top of page -->  
+	<button onclick="topFunction()" id="myBtn" title="Go to top of the page" class="instaFade"><img src="● HTML Website/Icon Assets/UpArrow.png" alt="GitHub Icon"></button>
+		<script>
+			// JS for Button to top of page
+			var mybutton = document.getElementById("myBtn");
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
 
-  <body id="top">
-    <div id="cv" class="instaFade">
+	  <div id="cv" class="instaFade">
       <div class="mainDetails">
+		<div id="teamphoto" class="quickFade">
+        	<img src="team_logo.png" alt="Team Logo"/>
+		</div>
 
-        <img src="team_logo.png" alt="Team Logo"/>
+		<div class="navbar">
+			<a href="#Home">Home</a>
+			<a href="#Team Profiles">Team Profiles</a>
+			<a href="#Ideal Jobs">Ideal Jobs</a>
+			<a href="#Tools">Tools</a>
+			<a href="#Industry Datantact">Industry Data</a>
+			<a href="#IT Work">IT Work</a>
+			<a href="#IT Technologies">IT Technologies</a>
+			<a href="#Project">Project</a>
+			<a href="#Reflection">Reflection</a>
+		</div>
+
 
         <div id="name">
-          <h1 class="quickFade delayTwo">The Rag Tags</h1>
+          <h1 class="quickFade delayTwo">The I.T. Crowd</h1>
           <h2 class="quickFade delayThree">Team Website</h2>
-        </div>
-
-        <div class="sectionTitle">
-          <h3><center><span class="bolded">Our Aim:</span></center></h3>
-        </div>
-
-        <div class="sectionContent">
-          <p>Insert brief statement about project here</p>
         </div>
       </div>
 
-      <div id="mainArea" class="quickFade delayFive">
+<!-- Section 1 -->
+	<div id="mainArea" class="quickFade delayFive" >
+		<section>
+			<article>
+            	<div id="section1" class="sectionTitle">
+              		<h1><span class="bolded">"""Intro"""</span></h1>
+            	</div>
+
+            <div class="sectionContent">
+				<p>Add short blurb here</p>
+            </div>
+          </article>
+        </section>
+
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Meet our team:</span></h1>
+			<div id="Team Profiles"></div>
+              <h1><span class="bolded">The Team</span></h1>
             </div>
 
             <div class="sectionContent">
@@ -44,46 +125,33 @@
                 <tr>
                   <th>
                     <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Vanessa_Profile pic.jpg" alt="Vanessa Profile Pic"></a>
+                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Vanessa_Profile pic.png" alt="Vanessa Profile Pic"></a>
                     </div>
                   </th>
                   <th>
                     <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Tim_headshot.jpg" alt="Tim Profile Pic"></a>
+                      <a href="1. Team Profiles + Ideal Jobs/Josh_profile.html"><img src="1. Team Profiles + Ideal Jobs/Josh_Profile_pic.png" alt="Josh Profile Pic"></a>
                     </div>
+                  </th>
+				  <th>
+                    <div id="headshot" class="quickFade delayFour">
+               			<a href="1. Team Profiles + Ideal Jobs/Timothy_My_Profile_Summary.txt"><img src="1. Team Profiles + Ideal Jobs/Tim_headshot.png" alt="Tim Profile Pic"></a>
+					  </div>
                   </th>
                 </tr>
 
                 <tr>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html">Vanessa Smair</a></center></h2>
-                  </td>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Tim_profile.html">Timothy Nancarrow</a></center></h2>
-                  </td>
+                  	<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html">Vanessa Smair</a></center></h2>
+					</td>
+					<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Josh_profile.html">Joshua Wagner</a></center></h2>
+					</td>
+					<td>
+						<h2><center><a href="1. Team Profiles + Ideal Jobs/Timothy_My_Profile_Summary.txt">Timothy Nancarrow</a></center></h2>
+					</td>
                 </tr>
 
-                <tr>
-                  <td>
-                    <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Josh_Profile_pic.jpg" alt="Josh Profile Pic"></a>
-                    </div>
-                  </td>
-                  <td>
-                    <div id="headshot" class="quickFade delayFour">
-                      <a href="1. Team Profiles + Ideal Jobs/Vanessa_Profile.html"><img src="1. Team Profiles + Ideal Jobs/Mitchell_Profile_pic.jpg" alt="Mitchell_Profile_pic"></a>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Josh_profile.html">Joshua Wagner</a></center></h2>
-                  </td>
-                  <td>
-                    <h2><center><a href="1. Team Profiles + Ideal Jobs/Mitchell_profile.html">Mitchell Grainger</a></center></h2>
-                  </td>
-                </tr>
               </table>
             </div>
           </article>
@@ -92,57 +160,99 @@
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Team comparison:</span></h1>
+              <h1><span class="bolded">Team Comparison</span></h1>
             </div>
 
             <div class="sectionContent">
-              <p>Add short blurb here</p>
+              <p>Overall, the team shares a lot in common with both learning styles and personalities. All group members are visual learners and share a turbulent identity.</p>
+              <p>However, each group member had their own unique traits. Vanessa has an intuitive and thinking mindset which differs from Tim's and Josh's observance and feeling traits. Tims focus on complexity, curiosity and connection along with his extraversion is unique compared to the other results. Josh is more judging with his tactics compared to Vanessa and Tim who are more prospective.</p>
             </div>
           </article>
         </section>
 
-        <section>
-          <article>
-            <div class="sectionTitle">
-              <h1><span class="bolded">Ideal Jobs:</span></h1>
-            </div>
+		<section>
+	  		<article>
+            	<div class="sectionTitle">
+              		<div id="Ideal Jobs"></div>
+					<h1><span class="bolded">Ideal Jobs</span></h1>
+            	</div>
 
-            <div class="sectionContent">
-              <p>Although all group members want to pursue different jobs in IT, all group members have to possess a general collection of skills.</p>
-              <p>Some of these skills are:</p>
-              <div id="dotPoints_Ref" class="quickFade delayFour">
-                <ul>
-                  <li>Continue to stay up to date about current practices and be able to adapt.</li>
-                  <li>Possess strong analytical and problem-solving skills.</li>
-                  <li>Manage projects to agreed deadlines.</li>
-                  <li>Have strong communication skills</li>
-                  <li>Experience with AWS</li>
-                </ul>
-              </div>
-              <p>The main aspect that sets each group member apart is the specialisation of each job. Tim specialises in back-end development for health systems at Apple Inc. Vanessa specialises in data analysis projects that help determine business outcomes. Josh specialises in creating cloud, data and digital software solutions. Finally, Mitchell specialises in program and project management for a data analytics organisation.</p>
-              <p><center><a href="1. Team Profiles + Ideal Jobs/idealjobs.html">Ideal Jobs Table</a></center></p>
-            </div>
-          </article>
+            	<div class="sectionContent">
+				<p>Although all group members want to pursue different jobs in IT, all group members have to possess a general collection of skills.</p>
+				<p>Some of these skills are:</p>
+					<div id="dotPoints_Ref" class="quickFade delayFour">
+						<ul>
+						<li>Continue to stay up to date about current practices and be able to adapt.</li>
+						<li>Possess strong analytical and problem-solving skills.</li>
+						<li>Manage projects to agreed deadlines.</li>
+						<li>Have strong communication skills</li>
+						<li>Experience with AWS</li>
+						</ul>
+					</div>
+				<p>The main aspect that sets each group member apart is the specialisation of each job. Tim specialises in back-end development for health systems at Apple Inc. Vanessa specialises in data analysis projects that help determine business outcomes. Josh specialises in creating cloud, data and digital software solutions. Finally, Mitchell specialises in program and project management for a data analytics organisation.<br><br>
+				</p>
+<<<<<<< Updated upstream
+				<p><center><a class="bolded" href="● HTML Website/idealjobs.html">Click here to view the 'Ideal Jobs Comparison table'</a></center></p>
+=======
+
+				<p><center><a class="bolded" href="idealjobs.html">Click here to view the 'Ideal Jobs Comparison table'</a></center></p>
+>>>>>>> Stashed changes
+				</div>
+          	</article>
         </section>
 
         <section>
           <article>
             <div class="sectionTitle">
               <h1><span class="bolded">Tools and Meetings:</span></h1>
+			<div id="Tools"></div>	
             </div>
 
             <div class="sectionContent">
-              <h2><span class="bolded">Links:</span></h2>
-              <p>Microsoft Teams:<a href="https://teams.microsoft.com/l/team/19%3amc55W8q0iOG2s9sd1UG9wLBUXRp5cCZR763XdikuJrk1%40thread.tacv2/conversations?groupId=357a7dce-bf41-4939-a9a0-8ef06562508d&tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b">COSC2196-A2-The-Rag-Tags</a></p>
-              <p>GitHub Repository:<a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-RagTags">s3950562/COSC2196_A2_Team_Project-The-RagTags</a></p>
-              <p>GitHub Commit history:<a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-RagTags/commits/main">s3950562/COSC2196_A2_Team_Project-The-RagTags-Commits</a></p>
+              <h3><span class="bolded">Links:</span></h3>
+				<table>
+					<tr>
+						<th>
+							<div id=icon>
+								<a href="https://teams.microsoft.com/l/team/19%3amc55W8q0iOG2s9sd1UG9wLBUXRp5cCZR763XdikuJrk1%40thread.tacv2/conversations?groupId=357a7dce-bf41-4939-a9a0-8ef06562508d&tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b" target="_blank"><img src="● HTML Website/Icon Assets/msteams_icon.png" alt="Teams Icon"></a>
+							</div>
+						</th>
+						<th>
+							<div id=icon>
+								<a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-IT-Crowd"><img src="● HTML Website/Icon Assets/GitHub.png" alt="GitHub Icon"></a>
+							</div>
+						</th>
+						<th>
+							<div id=icon>
+								<a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-IT-Crowd/commits/master"><img src="● HTML Website/Icon Assets/RightArrow.png" alt="GitHub Commit Icon"></a>
+							</div>
+					</th>
+					</tr>
+					<tr>
+						<td><center><a href="https://teams.microsoft.com/l/team/19%3amc55W8q0iOG2s9sd1UG9wLBUXRp5cCZR763XdikuJrk1%40thread.tacv2/conversations?groupId=357a7dce-bf41-4939-a9a0-8ef06562508d&tenantId=d1323671-cdbe-4417-b4d4-bdb24b51316b">MS Teams</a></center></td>
+						<td><center><a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-IT-Crowd" target="_blank">GitHub Repository</a></center></td>
+						<td><center><a href="https://github.com/s3950562/COSC2196_A2_Team_Project-The-IT-Crowd/commits/master" target="_blank">GitHub Commits</a></center></td>
+					</tr>
+				</table>
+              <h3><span class="bolded">Comments on trail:</span></h3>
 
-              <h2><span class="bolded">Comments on trail:</span></h2>
+
               <p>Filler comment on trail</p>
 
-              <h2><span class="bolded">Meetings:</span></h2>
+			<center><div id="donutchart" style="width: 800px; height: 500px" class="quickFade"></div></center>
 
 
+
+
+              <h3><span class="bolded">Meetings:</span></h3>
+
+              <p>31/03/22,<a href="0. Main Page/31_03_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/31_3_2022-Meeting%20Recording.mp4?csf=1&web=1&e=m2qohN" target="_blank"> Recording</a>,<a href="0. Main Page/31_03_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>04/04/22,<a href="0. Main Page/04_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/04_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=hKx4ao" target="_blank"> Recording</a>,<a href="0. Main Page/04_04_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>06/04/22,<a href="0. Main Page/06_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/06_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=Y0dIWY" target="_blank"> Recording</a>,<a href="0. Main Page/06_04_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>07/04/22,<a href="0. Main Page/07_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/07_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=bzFx4q" target="_blank"> Recording</a>,<a href="0. Main Page/07_04_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>13/04/22,<a href="0. Main Page/13_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/13_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=zhajSB" target="_blank"> Recording</a>,<a href="0. Main Page/13_04_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>16/04/22,<a href="0. Main Page/16_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/16_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=JFk0WN" target="_blank"> Recording</a>,<a href="0. Main Page/16_04_22 Actions.docx" target="_blank"> Actions</a></p>
+              <p>21/04/22,<a href="0. Main Page/21_04_22 Agenda.docx" target="_blank"> Agenda</a>,<a href="https://rmiteduau.sharepoint.com/:v:/r/sites/IntrotoIT519/Shared%20Documents/General/Recordings/21_4_2022-Meeting%20Recording.mp4?csf=1&web=1&e=VAIEMe" target="_blank"> Recording</a>,<a href="0. Main Page/21_04_22 Actions.docx" target="_blank"> Actions</a></p>
 
             </div>
           </article>
@@ -151,40 +261,48 @@
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Industry Data:</span></h1>
+			<div id="Industry Data"></div>
+              <h1><span class="bolded">Industry Data</span></h1>
             </div>
 
             <div class="sectionContent">
-              <p>Placeholder text</p>
-              <p><center><a href="3. Industry Data/industrydata.html">Ideal Jobs Table</a></center></p>
+              <p>The industry data provided by Buring Glass gave us a strong insight on the importance of our general and specialised IT skills in the workforce.</p>
+              <p><center><a href="3. Industry Data/industrydata.html">Industry data report</a></center></p>
+
             </div>
+
           </article>
         </section>
 
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">IT Work:</span></h1>
+			 <div id="IT Work"></div>
+              <h1><span class="bolded">IT Work</span></h1>
             </div>
 
             <div class="sectionContent">
               <p>Transcript: <a href="4. IT Work/Interview_Transcript.docx">Interview with Sam Smair</a></p>
-              <p>Analysis: <a href="4. IT Work/Analysis_Page.html">TBA</a></p>
+              <p>Analysis: <a href="4. IT Work/itwork.html">IT Work</a></p>
+
+
             </div>
+
           </article>
         </section>
 
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">IT Technologies:</span></h1>
+				<div id="IT Technologies"></div>
+              <h1><span class="bolded">IT Technologies</span></h1>
             </div>
 
             <div class="sectionContent">
-              <p>Vanessa Smair - <a href="5. IT Technologies/Cyber_Security.html">Cyber Security</a></p>
+              <p>Vanessa Smair - <a href="5. IT Technologies/cybersecurity.html">Cyber Security</a></p>
               <p>Timothy Nancarrow - <a href="5. IT Technologies/Clouds, Services, Servers.html">Clouds, Services and Servers</a></p>
               <p>Joshua Wagner - <a href="5. IT Technologies/ML_Page.html">Machine Learning</a></p>
-              <p>Mitchell Grainger - <a href="5. IT Technologies/Robots.html">Robots</a></p>
+              <p>Vanessa Smair - <a href="5. IT Technologies/blockchain_crypto.html">Blockchain and Cryptocurrencies</a></p>
             </div>
           </article>
         </section>
@@ -192,11 +310,12 @@
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Project Idea:</span></h1>
+			<div id="Project"></div>	
+              <h1><span class="bolded">Project Idea</span></h1>
             </div>
 
             <div class="sectionContent">
-              <p>Ultimately we decided to go with Vanessa's Project idea with creating a reccomendation app.</p>
+              <p>Ultimately we decided to go with Vanessa's Project idea with creating a recommendation app.</p>
               <p>Please <a href="6. Project Ideas/Project_Idea.html">click here</a> to access our full plan</p>
             </div>
           </article>
@@ -205,16 +324,17 @@
         <section>
           <article>
             <div class="sectionTitle">
-              <h1><span class="bolded">Group reflection:</span></h1>
+			<div id="Reflection"></div>
+              <h1><span class="bolded">Group Reflection</span></h1>
             </div>
 
             <div class="sectionContent">
-              <h2>Individual:</h2>
+              <h3><span class="bolded">Individual:</span></h3>
               <p><a href="7. Group Reflection/Vanessa_Reflection.html">Vanessa</a></p>
               <p><a href="7. Group Reflection/Tim_Reflection.html">Timothy</a></p>
               <p><a href="7. Group Reflection/Josh_Reflection.html">Joshua</a></p>
-              <p><a href="7. Group Reflection/Mitchell_Reflection.html">Mitchell</a></p>
-              <h2>Group:</h2>
+
+              <h3><span class="bolded">Group:</span></h3>
               <p><span class="bolded">What went well?</span></p>
               <p></p>
               <p><span class="bolded">What could be improved?</span></p>
@@ -229,5 +349,9 @@
 
       </div>
     </div>
+
   </body>
+	<div class="footer">
+  <p>Footer</p>
+</div>
 </html>
