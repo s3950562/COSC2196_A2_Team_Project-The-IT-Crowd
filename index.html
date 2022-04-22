@@ -53,9 +53,29 @@
 	}
 	</script>
   </head>
-
   <body id="top" data-spy="scroll" data-target=".navbar" data-offset="100">
-    <div id="cv" class="instaFade">
+	<!-- Button to return to top of page -->  
+    <button onclick="topFunction()" id="myBtn" title="Go to top of page" class="instaFade"><img src="● HTML Website/Icon Assets/UpArrow.png" alt="GitHub Icon"></button>
+		<script>
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+	  <div id="cv" class="instaFade">
       <div class="mainDetails">
 		<div id="teamphoto" class="quickFade">
         	<img src="team_logo.png" alt="Team Logo"/>
@@ -79,8 +99,6 @@
           <h2 class="quickFade delayThree">Team Website</h2>
         </div>
       </div>
-
-
 
 <!-- Section 1 -->
 	<div id="mainArea" class="quickFade delayFive" >
@@ -202,7 +220,7 @@
 
               <p>Filler comment on trail</p>
 
-			<center><div id="donutchart" style="width: 800px; height: 500px"></div></center>
+			<center><div id="donutchart" style="width: 800px; height: 500px" class="quickFade"></div></center>
 
 
 
