@@ -20,22 +20,25 @@
 	function drawChart() {
 	var data = google.visualization.arrayToDataTable([
 	['Task', 'GitHub Commits'],
-	['Timothy',   11],
-	['Vanessa',   2],
-	['Joshua',    2],
+	['Timothy',   48],
+	['Vanessa',   30],
+	['Joshua',    15],
 	]);
 
 	var options = {
-		title: 'Commits to GitHub',
-		titleTextStyle: { color: "FFFFFF",
-  			fontName: "Poppins",
-  			fontSize: 20,},
+		 pieSliceText: {
+				fontSize: 18,
+				fontStyle: "Poppins",
+				},
 		pieHole: 0.4,
 		backgroundColor: { fill:'transparent' },	
 		legend: {
+			position: 'bottom', 
+        	alignment: 'center' ,
+        	orientation: 'vertical',
   			textStyle: {
 				color: "FFFFFF",
-				fontSize: 15,
+				fontSize: 18,
 				fontStyle: "Poppins",
 				}
 		},
@@ -195,7 +198,7 @@
 				
               <p>Filler comment on trail</p>
 				
-			<div id="donutchart" style="width: 100%; height: 400px"></div>
+			<center><div id="donutchart" style="width: 800px; height: 500px"></div></center>
 
 
 
