@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Website for The-IT-Crowd">
     <meta charset="utf-8">
-
+	<!-- Styling -->
     <link type="text/css" rel="stylesheet" href="● HTML Website/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" type="text/css">
 	<!-- Page Scroller -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+	<!-- Donut Chart -->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
 	google.charts.load("current", {packages:["corechart"]});
@@ -24,9 +24,9 @@
 		['Joshua', 30],
 		['Timothy', 48],
 	]);
-
+// Donut Chart Options
 	var options = {
-		title: "Commits GitHub Repo",
+		title: "Team Commits GitHub",
 		titleTextStyle: { color: "FFFFFF",
   			fontName: "Poppins",
   			fontSize: 20,},
@@ -55,12 +55,11 @@
   </head>
   <body id="top" data-spy="scroll" data-target=".navbar" data-offset="100">
 	<!-- Button to return to top of page -->  
-    <button onclick="topFunction()" id="myBtn" title="Go to top of page" class="instaFade"><img src="● HTML Website/Icon Assets/UpArrow.png" alt="GitHub Icon"></button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top of the page" class="instaFade"><img src="● HTML Website/Icon Assets/UpArrow.png" alt="GitHub Icon"></button>
 		<script>
+			// JS for Button to top of page
 			var mybutton = document.getElementById("myBtn");
-
 			window.onscroll = function() {scrollFunction()};
-
 			function scrollFunction() {
 			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
@@ -68,7 +67,6 @@
 				mybutton.style.display = "none";
 			  }
 			}
-
 			function topFunction() {
 			  document.body.scrollTop = 0;
 			  document.documentElement.scrollTop = 0;
@@ -260,12 +258,12 @@
               <p>The industry data provided by Buring Glass gave us a strong insight on the importance of our general and specialised IT skills in the workforce.</p>
               <p><center><a href="3. Industry Data/industrydata.html">Industry data report</a></center></p>
             </div>
-			<div id="IT Work"></div>
           </article>
         </section>
 
         <section>
           <article>
+			<div id="IT Work"></div>
             <div class="sectionTitle">
               <h1><span class="bolded">IT Work</span></h1>
             </div>
@@ -279,6 +277,7 @@
 
         <section>
           <article>
+			<div id="IT Technologies"></div>
             <div class="sectionTitle">
               <h1><span class="bolded">IT Technologies</span></h1>
             </div>
